@@ -30,7 +30,7 @@ public class Extraordinaria1 : MonoBehaviour
 
 
 }
-        public    void CompraJuego()
+        public void CompraJuego()
 
        {
             if(dinero > 60 && fechaSalida)

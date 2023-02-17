@@ -12,8 +12,8 @@ public class Colecciones : MonoBehaviour
     public string[] oficios = new string[10];
     public bool[] asistencia = new bool[] { true, false, false, true, true };
     public List<string> seriesFavoritas = new List<string> ();
-
-
+    public ArrayList inventario = new ArrayList()
+    public Hashtable 
 
 
    // Start is called before the first frame update
@@ -56,6 +56,22 @@ public class Colecciones : MonoBehaviour
         seriesFavoritas.Remove("The walking dead");
         seriesFavoritas.Insert(2, "La casa de papel");
         Debug.Log("Mis series favoritas son:" + seriesFavoritas.Count);
+       
+        inventario.Add("Objeto:Pocion");
+        inventario.Add("Monedas:30");
+        inventario.Add("Usuario:Mago");
+        inventario.Add("Armadura:Cuero");
+
+        inventario.Remove("Objeto:Pocion");
+        inventario.Remove("Monedas:30");
+
+        inventario.Insert(3, "Monedas:30");
+        inventario.Insert(4, "Objeto:Pocion");
+
+        Debug.Log(inventario[0].GetType());
+        Debug.Log(inventario[1].GetType());
+
+
     }
 
 
